@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Self-Help Reading Lab | Best Kindle Books for Personal Growth</title>
-  <meta name="description" content="Self-Help Reading Lab curates the best Kindle books for habits, mindset, productivity, and personal growth." />
+  <title>Self-Help Reading Lab | Best Self-Help Books</title>
+  <meta name="description" content="Self-Help Reading Lab curates the best inspirational books for habits, mindset, productivity, and personal growth." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
@@ -35,17 +35,20 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
       display: flex;
+      flex-wrap: wrap;
       align-items: flex-start;
     }
 
     .book img {
-      width: 120px;
+      width: 150px;
       margin-right: 20px;
       border-radius: 6px;
+      flex-shrink: 0;
     }
 
     .book-details {
       flex: 1;
+      min-width: 200px;
     }
 
     .cta {
@@ -80,19 +83,31 @@
       color: #555;
       text-align: center;
     }
+
+    @media (max-width: 600px) {
+      .book {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .book img {
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <!-- Hero Banner -->
-<img class="hero" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjA3fDB8MHx8bGlicmFyeXx8fHx8fHwxNjA5OTExMjU5&ixlib=rb-1.2.1&q=80&w=1200" alt="Self-Help Reading Lab Banner">
+<img class="hero" src="https://images.unsplash.com/photo-1551836022-6812f2b7da9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Self-Help Reading Lab Banner">
 
 <h1>Self-Help Reading Lab</h1>
-<p style="text-align:center;"><strong>Curated Kindle books for habits, mindset, productivity, and personal growth.</strong></p>
+<p style="text-align:center;"><strong>Curated inspirational books for habits, mindset, productivity, and personal growth.</strong></p>
 
 <div class="book">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits Cover">
+  <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UY218_.jpg" alt="Atomic Habits Cover">
   <div class="book-details">
     <h2>Atomic Habits — James Clear</h2>
     <p>A practical guide to building better habits through small, repeatable changes.</p>
@@ -101,7 +116,7 @@
 </div>
 
 <div class="book">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/41lYkKHQ21L._SX331_BO1,204,203,200_.jpg" alt="Deep Work Cover">
+  <img src="https://m.media-amazon.com/images/I/41lYkKHQ21L._AC_UY218_.jpg" alt="Deep Work Cover">
   <div class="book-details">
     <h2>Deep Work — Cal Newport</h2>
     <p>Learn how to eliminate distractions and develop deep focus.</p>
@@ -110,7 +125,7 @@
 </div>
 
 <div class="book">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/41JSmKPT-ML._SX329_BO1,204,203,200_.jpg" alt="Mindset Cover">
+  <img src="https://m.media-amazon.com/images/I/41JSmKPT-ML._AC_UY218_.jpg" alt="Mindset Cover">
   <div class="book-details">
     <h2>Mindset — Carol Dweck</h2>
     <p>Discover how a growth mindset unlocks learning and resilience.</p>
@@ -119,7 +134,7 @@
 </div>
 
 <div class="book">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/51dF9A9zLAL._SX331_BO1,204,203,200_.jpg" alt="7 Habits Cover">
+  <img src="https://m.media-amazon.com/images/I/51dF9A9zLAL._AC_UY218_.jpg" alt="7 Habits Cover">
   <div class="book-details">
     <h2>The 7 Habits of Highly Effective People — Stephen R. Covey</h2>
     <p>A timeless framework for personal effectiveness and leadership.</p>
