@@ -9,95 +9,146 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      background: #f4f4f8;
       color: #222;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
+
+    img.hero {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+
     h1, h2 {
       color: #111;
+      text-align: center;
     }
+
     .book, .membership {
       background: #ffffff;
-      padding: 15px;
-      margin-bottom: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .book img {
+      width: 120px;
+      margin-right: 20px;
       border-radius: 6px;
     }
+
+    .book-details {
+      flex: 1;
+    }
+
     .cta {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 14px;
+      padding: 10px 18px;
       background: #ff9900;
       color: #000;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 4px;
+      border-radius: 6px;
     }
+
+    .cta:hover {
+      background: #e68a00;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .membership ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .membership li {
+      margin-bottom: 10px;
+    }
+
     footer {
       font-size: 14px;
       margin-top: 40px;
       color: #555;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 
+<!-- Hero Banner -->
+<img class="hero" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjA3fDB8MHx8bGlicmFyeXx8fHx8fHwxNjA5OTExMjU5&ixlib=rb-1.2.1&q=80&w=1200" alt="Self-Help Reading Lab Banner">
+
 <h1>Self-Help Reading Lab</h1>
-<p><strong>Curated Kindle books for habits, mindset, productivity, and personal growth.</strong></p>
-
-<p>
-Welcome to Self-Help Reading Lab — a carefully curated collection of the most impactful
-self-help books available on Kindle and Audible today.
-</p>
+<p style="text-align:center;"><strong>Curated Kindle books for habits, mindset, productivity, and personal growth.</strong></p>
 
 <div class="book">
-  <h2>Atomic Habits — James Clear</h2>
-  <p>A practical guide to building better habits through small, repeatable changes.</p>
-  <a class="cta" href="https://amzn.to/48XppTt" target="_blank">Read on Kindle</a>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Atomic Habits Cover">
+  <div class="book-details">
+    <h2>Atomic Habits — James Clear</h2>
+    <p>A practical guide to building better habits through small, repeatable changes.</p>
+    <a class="cta" href="https://amzn.to/48XppTt" target="_blank">Read on Kindle</a>
+  </div>
 </div>
 
 <div class="book">
-  <h2>Deep Work — Cal Newport</h2>
-  <p>Learn how to eliminate distractions and develop deep focus.</p>
-  <a class="cta" href="https://amzn.to/3KCfAlZ" target="_blank">Read on Kindle</a>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41lYkKHQ21L._SX331_BO1,204,203,200_.jpg" alt="Deep Work Cover">
+  <div class="book-details">
+    <h2>Deep Work — Cal Newport</h2>
+    <p>Learn how to eliminate distractions and develop deep focus.</p>
+    <a class="cta" href="https://amzn.to/3KCfAlZ" target="_blank">Read on Kindle</a>
+  </div>
 </div>
 
 <div class="book">
-  <h2>Mindset — Carol Dweck</h2>
-  <p>Discover how a growth mindset unlocks learning and resilience.</p>
-  <a class="cta" href="https://amzn.to/3KRzLMQ" target="_blank">Read on Kindle</a>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41JSmKPT-ML._SX329_BO1,204,203,200_.jpg" alt="Mindset Cover">
+  <div class="book-details">
+    <h2>Mindset — Carol Dweck</h2>
+    <p>Discover how a growth mindset unlocks learning and resilience.</p>
+    <a class="cta" href="https://amzn.to/3KRzLMQ" target="_blank">Read on Kindle</a>
+  </div>
 </div>
 
 <div class="book">
-  <h2>The 7 Habits of Highly Effective People — Stephen R. Covey</h2>
-  <p>A timeless framework for personal effectiveness and leadership.</p>
-  <a class="cta" href="https://amzn.to/490Y4Qq" target="_blank">Read on Kindle</a>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51dF9A9zLAL._SX331_BO1,204,203,200_.jpg" alt="7 Habits Cover">
+  <div class="book-details">
+    <h2>The 7 Habits of Highly Effective People — Stephen R. Covey</h2>
+    <p>A timeless framework for personal effectiveness and leadership.</p>
+    <a class="cta" href="https://amzn.to/490Y4Qq" target="_blank">Read on Kindle</a>
+  </div>
 </div>
 
 <hr />
 
-<h2>Listening & Membership Options</h2>
+<h2 style="text-align:center;">Listening & Membership Options</h2>
 
 <div class="membership">
   <h3>Audible Options</h3>
   <ul>
-    <li><a href="https://www.amazon.com/hz/audible/mlp/membership/plus" target="_blank">Audible Plus – Free Trial</a></li>
-    <li><a href="https://www.amazon.com/hz/audible/mlp/membership/plus/monthly" target="_blank">Audible Plus – Monthly Membership</a></li>
-    <li><a href="https://www.amazon.com/hz/audible/mlp/membership/premiumplus/monthly" target="_blank">Audible Premium Plus – Monthly Membership</a></li>
-    <li><a href="https://www.amazon.com/hz/audible/mlp/membership/premiumplus/annual" target="_blank">Audible Premium Plus – Annual Membership</a></li>
+    <li><a class="cta" href="https://www.amazon.com/hz/audible/mlp/membership/plus" target="_blank">Audible Plus – Free Trial</a></li>
+    <li><a class="cta" href="https://www.amazon.com/hz/audible/mlp/membership/plus/monthly" target="_blank">Audible Plus – Monthly Membership</a></li>
+    <li><a class="cta" href="https://www.amazon.com/hz/audible/mlp/membership/premiumplus/monthly" target="_blank">Audible Premium Plus – Monthly Membership</a></li>
+    <li><a class="cta" href="https://www.amazon.com/hz/audible/mlp/membership/premiumplus/annual" target="_blank">Audible Premium Plus – Annual Membership</a></li>
   </ul>
 </div>
 
 <div class="membership">
-  <h3>Prime Video</h3>
+  <h3>Prime Video & Membership</h3>
   <ul>
-    <li><a href="https://www.amazon.com/prime" target="_blank">Amazon Prime Free Trial</a></li>
-    <li><a href="https://www.amazon.com/prime" target="_blank">Amazon Prime Paid Membership</a></li>
-    <li><a href="https://www.amazon.com/joinyoungadult" target="_blank">Prime for Young Adults Free Trial</a></li>
-    <li><a href="https://www.amazon.com/joinyoungadult" target="_blank">Prime for Young Adults Paid Membership</a></li>
-    <li><a href="https://www.amazon.com/gp/video/primesignup" target="_blank">Prime Video Free Trial</a></li>
+    <li><a class="cta" href="https://www.amazon.com/prime" target="_blank">Amazon Prime Free Trial</a></li>
+    <li><a class="cta" href="https://www.amazon.com/prime" target="_blank">Amazon Prime Paid Membership</a></li>
+    <li><a class="cta" href="https://www.amazon.com/joinyoungadult" target="_blank">Prime for Young Adults Free Trial</a></li>
+    <li><a class="cta" href="https://www.amazon.com/joinyoungadult" target="_blank">Prime for Young Adults Paid Membership</a></li>
+    <li><a class="cta" href="https://www.amazon.com/gp/video/primesignup" target="_blank">Prime Video Free Trial</a></li>
   </ul>
 </div>
 
@@ -106,4 +157,4 @@ self-help books available on Kindle and Audible today.
 </footer>
 
 </body>
-                                                                                                                       </html>
+  </html>
